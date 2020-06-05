@@ -27,7 +27,7 @@ h2 {
 }
 
 section {
-  padding: 2vw 20vw 2vw 20vw;
+  padding: 2vw 30vw 2vw 30vw;
 }
 
 input {
@@ -67,10 +67,10 @@ nav a {
 /* //// Hero Section////*/
 
 #hero-container {
-  max-height: 600px;
+  max-height: 800px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(25, 150px);
+  grid-template-columns: repeat(35, 150px);
   grid-auto-rows: 120px;
   overflow: hidden;
 }
@@ -338,6 +338,10 @@ footer {
 
   footer {
     padding: 2vw 8vw 2vw 8vw;
+  }
+
+  #hero-container {
+    max-height: 600px;
   }
 }
 
