@@ -6,126 +6,189 @@ html {
   height: 100%;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  cursor: url("images/mouse.png"), auto;
+  color: black;
+  cursor: url(images/blob.png), auto;
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
   font-weight: 600;
+  font-family: "Abril Fatface", cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+
+h2 {
+  letter-spacing: 2px;
 }
 
 section {
-  padding: 6vw 20vw 6vw 20vw;
+  padding: 2vw 20vw 2vw 20vw;
 }
 
-/* //// Flower Hero Section////*/
+input {
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 15px;
+  background-color: transparent;
+  margin-right: 10px;
+}
 
-#flower-container {
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(155, 155, 155);
+}
+
+.bg-oldlace {
+  background-color: oldlace;
+}
+
+/* //// NAV////*/
+
+nav {
+  padding-top: 50px;
+}
+
+nav a {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding-right: 30px;
+}
+
+/* //// Hero Section////*/
+
+#hero-container {
   max-height: 600px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(25, 120px);
+  grid-template-columns: repeat(25, 150px);
   grid-auto-rows: 120px;
   overflow: hidden;
-  margin-bottom: 40px;
-  background-color: seagreen;
 }
 
-#flower-container div:nth-child(5n + 5) {
-  transform: rotate(50deg);
+#hero-container div:nth-child(5n + 5) {
+  transform: rotate(30deg);
 }
 
-#flower-container div:nth-child(7n + 7) {
-  transform: rotate(-30deg);
+#hero-container div:nth-child(7n + 7) {
+  transform: rotate(-50deg);
 }
 
-#overlay {
+#hero-section .centered h1 {
+  font-size: 150px;
+  margin-bottom: 0px;
+}
+
+/* //// Intro Section////*/
+
+#intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#intro div {
+  width: 50%;
+}
+
+#side-img {
+  position: relative;
+  text-align: center;
+  color: oldlace;
+  font-size: 30px;
+}
+
+#side-img img {
+  width: 80%;
+}
+
+.centered {
   text-align: center;
   position: absolute;
-  top: 35%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#overlay h1 {
-  font-size: 100px;
-  font-family: "Abril Fatface", cursive;
-}
+/* ////How it works Section////*/
 
-/* //// WOrk examples Section////*/
-
-#intro {
-  height: 100%;
-}
-
-#slideshow-container {
-  display: block;
-}
-
-#slideshow-heading {
-  font-size: 40px;
-  text-align: center;
-  font-family: "Abril Fatface", cursive;
-  margin: 80px auto;
-}
-
-#slideshow {
-  position: relative;
-  width: 80%;
-  height: auto;
+#explanation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
   margin: auto;
 }
 
-#slideshow > img {
-  position: absolute;
-  border-radius: 5px;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-}
-
-/* //// Flower banner Section////*/
-
-#flower-banner {
-  background-image: url("images/flower1.png");
-  height: 180px;
-  background-position-x: -40px;
-}
-
-/* //// Facts Section////*/
-
-#facts {
+.explanation-div {
   display: flex;
-
-  /*background-color: #a7c8eb;
-  background-color: #face99;*/
-  background-color: #face99;
-}
-
-#facts div {
-  text-align: center;
-
+  padding-right: 40px;
+  align-items: center;
   width: 30%;
 }
 
-#facts div:nth-child(1),
-#facts div:nth-child(2) {
-  padding-right: 50px;
+.number {
+  font-size: 100px;
+  margin-right: 15px;
 }
 
-.material-icons {
-  font-size: 55px;
+/* //// Doodle Section////*/
+
+#doodle-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
 }
 
-/* ///// Interview/////*/
+.doodle {
+  margin: auto;
+}
 
-#interviews h1 {
+.doodle a {
+  text-decoration: none;
+}
+
+.doodle img:hover {
+  position: relative;
+  top: -10px;
+  transition: top 5s;
+}
+
+#doodle-container img {
+  width: 80%;
+}
+
+/* //// Share Section////*/
+
+#share {
+  text-align: center;
+}
+
+#share-btn {
+  background-image: url("images/bg-black.png");
+  background-color: oldlace;
+  background-size: contain;
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
+  border: none;
+  color: oldlace;
   font-family: "Abril Fatface", cursive;
-
-  font-size: 40px;
+  letter-spacing: 2px;
 }
+
+/* ///// Interview Section/////*/
+
 #interview-container {
   display: flex;
   flex-wrap: wrap;
@@ -152,20 +215,45 @@ section {
   margin: 0 0 40px 0;
 }
 
-/* //// Last Section////*/
+/* //// Community Section////*/
 
-#goodbye-heading {
+#facts-container {
+  display: grid;
+  grid-template-columns: 10fr 0.5fr 10fr 0.5fr 10fr;
   text-align: center;
-  background-color: #a7c8eb;
+  align-items: center;
 }
 
-#goodbye-heading h1 {
+.facts p {
+  padding-right: 18px;
+  padding-left: 8px;
+}
+
+.line {
+  height: 60%;
+  width: 2px;
+  background-color: black;
+  margin-top: 70px;
+}
+
+/* //// Newsletter////*/
+
+#newsletter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#newsletter-container {
+  text-align: center;
+}
+
+#newsletter-container h1 {
   font-size: 80px;
-  font-family: "Abril Fatface", cursive;
+  margin-bottom: 20px;
 }
 
 .social-banner {
-  height: 30px;
+  height: 40px;
   padding: 10px 0 10px 0;
   width: 100%;
   overflow: hidden;
@@ -192,7 +280,6 @@ section {
 #social-left h4 {
   float: left;
   width: 5%;
-  color: black;
   margin-left: 80px;
 }
 @keyframes moveBannerRight {
@@ -223,15 +310,6 @@ footer {
   align-items: baseline;
 }
 
-footer h2 {
-  font-family: "Abril Fatface", cursive;
-}
-
-footer a {
-  text-decoration: none;
-  color: black;
-}
-
 #footer-wrapper {
   display: flex;
   align-items: baseline;
@@ -246,10 +324,128 @@ footer a {
   font-size: 25px;
 }
 
+/* //// Media Query////*/
+
+@media (max-width: 2000px) {
+  section {
+    padding: 6vw 15vw 6vw 15vw;
+  }
+
+  #social-right h4,
+  #social-left h4 {
+    width: 5%;
+  }
+
+  footer {
+    padding: 2vw 8vw 2vw 8vw;
+  }
+}
+
+@media (max-width: 1500px) {
+  section {
+    padding: 4vw 12vw 4vw 12vw;
+  }
+
+  #social-right h4,
+  #social-left h4 {
+    width: 10%;
+  }
+
+  #hero-container {
+    display: grid;
+    grid-template-columns: repeat(11, 120px);
+  }
+}
+
+/*Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  section {
+    padding: 4vw 10vw 4vw 10vw;
+  }
+
+  #hero-section .centered h1 {
+    font-size: 80px;
+  }
+
+  #intro {
+    flex-direction: column;
+  }
+
+  #intro div {
+    width: 100%;
+  }
+
+  #side-img img {
+    width: 50%;
+  }
+
+  #explanation-wrapper {
+    flex-direction: column;
+  }
+
+  .explanation-div {
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .number {
+    margin-bottom: 2px;
+  }
+
+  #facts-container {
+    display: grid;
+    grid-template-columns: 10fr;
+  }
+
+  .facts p {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .line {
+    height: 2px;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 580px) {
-  #slideshow-container {
-    display: none;
+  h1 {
+    font-size: 30px;
+  }
+
+  input {
+    margin-right: 0px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  input::placeholder {
+    padding-left: 5px;
+  }
+
+  #side-img {
+    font-size: 20px;
+  }
+
+  #side-img img {
+    width: 60%;
+  }
+
+  .number {
+    font-size: 70px;
+    margin: 0px;
+    padding-right: 15px;
+  }
+
+  #doodle-container {
+    flex-direction: column;
+  }
+
+  .doodle {
+    margin: auto auto 20px auto;
   }
 
   #interview-container {
@@ -265,26 +461,13 @@ footer a {
     margin: 20px 0 40px 0;
   }
 
-  #facts {
-    flex-direction: column;
-  }
-  #facts div {
-    width: 100%;
-    margin: auto;
-  }
-
-  #facts div:nth-child(1),
-  #facts div:nth-child(2) {
-    padding-right: 0px;
-  }
-
   #interview-container img {
     width: 100%;
     margin: 0px;
   }
 
-  footer {
-    flex-direction: column;
+  #newsletter-container h1 {
+    font-size: 40px;
   }
 
   #footer-wrapper {
@@ -296,54 +479,8 @@ footer a {
   }
 }
 
-/*Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-  section {
-    padding: 4vw 10vw 4vw 10vw;
-  }
-
-  #overlay h1 {
-    font-size: 80px;
-  }
-
-  #goodbye-heading h1 {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  #flower-banner {
-    background-position-x: -100px;
-  }
-}
-
-@media (max-width: 1500px) {
-  section {
-    padding: 4vw 12vw 4vw 12vw;
-  }
-
-  #social-right h4,
-  #social-left h4 {
-    width: 10%;
-  }
-
-  #flower-container {
-    display: grid;
-    grid-template-columns: repeat(11, 120px);
-  }
-}
-
-@media (max-width: 2000px) {
-  section {
-    padding: 6vw 15vw 6vw 15vw;
-  }
-
-  #social-right h4,
-  #social-left h4 {
-    width: 5%;
-  }
-
-  footer {
-    padding: 2vw 8vw 2vw 8vw;
+@media (max-width: 380px) {
+  #side-img {
+    font-size: 15px;
   }
 }

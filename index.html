@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,8 +14,9 @@
     <title>Digital invitation</title>
   </head>
   <body>
-    <div id="hero-section">
-      <div id="flower-container">
+  
+    <div id="hero-section" class="bg-oldlace">
+      <div id="hero-container">
         <div><img src="images/flower1.png" /></div>
         <div><img src="images/flower2.png" /></div>
         <div><img src="images/flower3.png" /></div>
@@ -139,70 +137,136 @@
         <div><img src="images/flower2.png" /></div>
         <div><img src="images/flower3.png" /></div>
         <div><img src="images/flower1.png" /></div>
-        <div><img src="images/flower2.png" /></div>
-        
+        <div><img src="images/flower2.png" /></div>  
       </div>
-      <div id="overlay">
-        <h1>We invite you!</h1>
-        <h2>Exhibition of graduation class 2020</h2>
+      <div class="centered" >
+        <h1>doodly</h1>
+        <h2>Embrace imperfect creativity</h2>
+        <nav>
+
+            <a href="">How?</a>
+            <a href="">About</a>
+            <a href="">Doodles of the day</a>
+            <a href="">Share doodles</a>
+            <a href="">Get to know doodlers</a>
+            <a href="">Newsletter</a>
+        </nav>
       </div>
     </div>
     <section id="intro">
-      <h1>
-        We invite you to the last exhibition of our studies. We are graduating
-        from HFK in Communciation Design. The exhibition is flower themed and we
-        cannot wait to show you what we've been working on the past year.
-      </h1>
-      <div id="slideshow-container">
-        <h1 id="slideshow-heading">Sneak Peak</h1>
-        <div id="slideshow">
-            <img src="images/photo1.jpg" />
-            <img src="images/photo2.jpg" />
-            <img src="images/photo3.jpg" />
-            <img src="images/photo4.jpg" />
+      <div> 
+        <h2>
+       At doodly we want to embrace doodling as a tool to stay creative, take your mind off and enjoy your freetime. Doodles are not about perfect lines, they are about your ideas and thoughts, which is why we want to create a space for all you doodlers out there.
+       </h2></div>
+      <div id="side-img"><img src="images/bg-black.png" alt=""><h2 class="centered">doodling <br> is <br>fun</h2></div>
+    </section>
+    <section id="explanation" class="bg-oldlace">
+      <h1>How it works</h1>
+      <div id="explanation-wrapper">
+          <div class="explanation-div">
+            <h2 class="number">1.</h2>
+            <div class="explanation-txt">
+              <h2>Doodle</h2>
+              <p>
+                Start doodling. You can sketch anything whether it is an idea or something interesting you see or imagine.
+              </p>
+            </div>
           </div>
-    </div>
-    </section>
+          <div class="explanation-div">
+            <h2 class="number">2.</h2>
+            <div class="explanation-txt">
+              <h2>Upload</h2>
+              <p>
+                  Share your doodles with a global community of doodlers and see
+                  where a doodle takes you.
+              </p>
+            </div>
+          </div>
+          <div class="explanation-div">
+            <h2 class="number">3.</h2>
+            <div class="explanation-txt">
+              <h2>Share</h2>
+              <p>
+                  Find your amazing doodle on Doodly and share it with your friends on other platforms. Or share the love and support others
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section id=""><h1>Doodles of the day</h1>
+      <div id="doodle-container">
+        <div class="doodle">
+          <a href="#">
+          <img src="images/doodle27.jpg" alt="" />
+          <p>by Ina @inaart</p>
+        </a>
+        </div>
+        <div class="doodle">
+          <a href="#">
+          <img src="images/doodle23.jpg" alt="" />
+          <p>by Paul @paul240</p>
+        </a>
+        </div>
+        <div class="doodle">
+          <a href="#"> 
+          <img src="images/doodle28.jpg" alt="" />
+          <p>by Hana @hanacreative</p>
+        </a>
+        </div>
+      </div>
+</section>
  
-
-    <div id="flower-banner"></div>
-    <section id="facts">
-      <div>
-        <i class="material-icons">event</i>
-        <h2>When?</h2>
-        <h4>20.05 - 31.05.2020</h4>
-      </div>
-      <div>
-        <i class="material-icons">location_on</i>
-        <h2>Where?</h2>
-        <h4>
-          Hochschule für Kunst<br />
-          Mundsburger Damm 20<br />Hamburg
-        </h4>
-      </div>
-      <div>
-        <i class="material-icons">local_atm</i>
-        <h2>How much?</h2>
-        <h4>The entrance is for free.</h4>
-      </div>
+    <section id="share" class="bg-oldlace">
+        <h1>Share your doodles</h1>
+      <p class="text">
+        We would love to see your doodles! <br>Share your doodles with like minded
+        doodlers around the globe.
+      </p>
+      <form >
+        <input type="file" id="myFile" name="filename" />
+          <button id="share-btn">Submit</button>
+      </form>
     </section>
+    <section id="community"> <h1>Join a global community</h1>
+
+      <div id="facts-container">
+        <div class="facts">
+          <h2>5000 <br />Doodlers</h2>
+          <p>
+           Our community of doodlers is growing every day. 5000 creative doodlers joined us on our journey.
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="facts">
+          <h2>
+            110 <br />
+            Countries
+          </h2>
+          <p>
+            You can meet doodlers from all over the world. Doodlers are diverse and represent 110 countries.
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="facts">
+          <h2>21500 <br />Doodles</h2>
+          <p>
+            We have 21500 doodles in our digital library. That makes us the biggest collection of doodles on the internet.
+          </p>
+        </div>
+      </div>
+      <div>
+</section>
+
+
     <section id="interviews">
-      <h1>Get to know the class of 2020</h1>
-      <h3>
-        Every week leading to the opening we will be posting an interview with a
-        student
+      <h1>Get to know lovely doodlers</h1>
+      <h3 style="text-align: center;">
+        Every week we will be posting an interview with one of you.
       </h3>
       <div id="interview-container">
         <div><img src="images/student.jpg" alt="" /></div>
         <div id="interview-txt">
           <h2>Interview with Simon</h2>
-          <h3>What is your major?</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-            libero iure iusto dolore minus commodi tempora consectetur vel omnis
-            velit, placeat assumenda dignissimos ipsa animi fugiat. Iure,
-            doloribus doloremque? Ut?
-          </p>
           <h3>What inspires you?</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
@@ -210,14 +274,21 @@
             velit, placeat assumenda dignissimos ipsa animi fugiat. Iure,
             doloribus doloremque? Ut?
           </p>
-          <h3>What was your favorite project?</h3>
+          <h3>Why do you doodle?</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
             libero iure iusto dolore minus commodi tempora consectetur vel omnis
             velit, placeat assumenda dignissimos ipsa animi fugiat. Iure,
             doloribus doloremque? Ut?
           </p>
-          <h3>What did you prepare for the exhibition?</h3>
+          <h3>What was your favorite doodle?</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+            libero iure iusto dolore minus commodi tempora consectetur vel omnis
+            velit, placeat assumenda dignissimos ipsa animi fugiat. Iure,
+            doloribus doloremque? Ut?
+          </p>
+          <h3>Who are your favorite doodlers?</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
             libero iure iusto dolore minus commodi tempora consectetur vel omnis
@@ -235,78 +306,85 @@
       </div>
     </section>
 
-    <section id="goodbye-heading">
+    <section id="newsletter-container" class="bg-oldlace">
       <div class="social-banner">
         <div id="social-left">
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
         </div>
       </div>
-      <h1>Be there or be square!</h1>
+     <div id="newsletter"> <h1>Newsletter</h1>
+      <p >
+        Join our community. <br>Our newsletter covers aspiring artists/ doodlers and newest trends in design.
+      </p>
+      <form >
+        <input type="email" placeholder="your email"/>   <button id="share-btn">Join</button>
+      </form>
+    </div>
       <div class="social-banner">
         <div id="social-right">
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
-          <a href=""> <h4>@hfk2020</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
+          <a href=""> <h4>@doodly</h4></a>
         </div>
       </div>
     </section>
 
     <footer>
-      <h2>HFK 2020</h2>
+      <h2>doodly</h2>
       <div id="footer-wrapper">
         <div id="contact">
           <h3>Contact</h3>
-          <a href="mailto:hello@doodly.com">hello@hfk2020.com</a>
+          <a href="mailto:hello@doodly.com">hello@doodly.com</a>
           <p>+4917888888</p>
         </div>
         <div id="socials">
@@ -318,6 +396,6 @@
         </div>
       </div>
     </footer>
-    <script src="app.js"></script>
+   <script src="app.js"></script>
   </body>
 </html>
